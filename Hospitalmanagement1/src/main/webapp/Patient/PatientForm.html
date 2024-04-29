@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>PatientForm</title>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <style type="text/css">
+	body
+	{
+ 	   background-image: url("../assets/patientForm.jpg");
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    form
+    { 
+       margin-left: 40%;
+       margin-top:8%; 
+       width:15px;
+       height:25px;
+       padding-left:40px;
+       padding-top:10px;
+       
+	}
+	input
+	{
+  	   padding:3px;
+       margin:2px;
+	}
+	h1
+	{
+       margin-left:30px;
+	}
+	#gender
+	{
+	    width:173px;
+   		height:27px;
+	}
+	
+  </style>
+</head>
+<body>
+   <form action="AddPatient.jsp">
+       <h1>Patient</h1>
+       
+       <label for="id">Id</label><br>
+    		<input type="id" id="token" name="id"><br>
+    		
+       <label for="name">Name</label><br>
+    		<input type="text" id="name" name="name" placeholder="Enter Name" required><br>
+    		
+       <label for="address">Address</label><br>
+   			<input type="text" id="address" name="address" required><br>
+   			
+   	   <label for="gender">Gender</label><br>
+            <select name="gender" id="gender" required>
+               <option selected disabled>...choose gender...</option>
+               <option>Male</option>
+               <option>Female</option>
+            </select><br>
+             
+    		
+       <label for="contact">Contact</label><br>
+    	    <input type="number" id="contact" name="contact" required><br>
+    	    
+       <input type="submit" value="Register">
+   </form>
+
+</body>
+</html>

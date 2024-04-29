@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <title>Login</title>
+ <style type="text/css">
+
+    body
+    {
+       background-image:url("assets/adminImage.jpg");
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    form
+    {
+       margin-left: 40%;
+       margin-top:12%; 
+       width:25%;
+       height:25%;
+       padding-left:40px;
+       padding-top:10px;
+       
+    }
+    label
+    {
+        color:#f9fbfe;
+        padding:3px;
+    }
+    h2
+    { 
+       margin-left:10px;
+       color:#f0f9f7;
+       font-weight: bold;
+       
+    }
+    input
+    {
+       padding:3px;
+       margin:3px;
+    }
+    
+ </style>
+</head>
+<body>
+  <form action="Admin.jsp">
+      <h2>Admin Login</h2>
+      <label for="email">UserName</label><br>
+      <input type="email" placeholder="Enter UserName" id="email" name="username"><br>
+      <label for="password">Password</label><br>
+      <input type="text" placeholder="Enter Password" id="password" name="password"><br>
+      <input type="submit" value="Login">
+   </form>
+</body>
+</html>
